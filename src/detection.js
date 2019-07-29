@@ -8,6 +8,8 @@ const MODEL_URL = process.env.PUBLIC_URL + '/model_web/'
 const LABELS_URL = MODEL_URL + 'labels.json'
 const MODEL_JSON = MODEL_URL + 'model.json'
 
+const VIDEO = process.env.PUBLIC_URL + '/video.mp4'
+
 const TFWrapper = model => {
   const calculateMaxScores = (scores, numBoxes, numClasses) => {
     const maxes = []
@@ -124,35 +126,16 @@ class App extends React.Component {
   canvasRef = React.createRef()
 
   componentDidMount() {
-    if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
-      const webCamPromise = navigator.mediaDevices
-        .getUserMedia({
-          audio: false,
-          video: {
-            facingMode: 'user'
-          }
-        })
-        .then(stream => {
-          window.stream = stream
-          this.videoRef.current.srcObject = stream
-          return new Promise((resolve, _) => {
-            this.videoRef.current.onloadedmetadata = () => {
-              resolve()
-            }
-          })
-        })
-
-      const modelPromise = tf.loadGraphModel(MODEL_JSON)
-      const labelsPromise = fetch(LABELS_URL).then(data => data.json())
-      Promise.all([modelPromise, labelsPromise, webCamPromise])
-        .then(values => {
-          const [model, labels] = values
-          this.detectFrame(this.videoRef.current, model, labels)
-        })
-        .catch(error => {
-          console.error(error)
-        })
-    }
+    const modelPromise = tf.loadGraphModel(MODEL_JSON)
+    const labelsPromise = fetch(LABELS_URL).then(data => data.json())
+    Promise.all([modelPromise, labelsPromise])
+      .then(values => {
+        const [model, labels] = values
+        this.detectFrame(this.videoRef.current, model, labels)
+      })
+      .catch(error => {
+        console.error(error)
+      })
   }
 
   detectFrame = (video, model, labels) => {
@@ -166,6 +149,7 @@ class App extends React.Component {
       })
   }
 
+  // NOTE This code runs for every frame
   renderPredictions = (predictions, labels) => {
     const ctx = this.canvasRef.current.getContext('2d')
     ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height)
@@ -173,59 +157,90 @@ class App extends React.Component {
     const font = '16px sans-serif'
     ctx.font = font
     ctx.textBaseline = 'top'
+
+    // Clean variables if there is no person OR there are more than one
+    if (predictions.length != 1) {
+      W = []
+      H = []
+      P = []
+      lf = 0
+      fc = 0
+    }
+
+    // Only runs if an object was detected (forEach)
     predictions.forEach(prediction => {
       const x = prediction.bbox[0]
       const y = prediction.bbox[1]
       const width = prediction.bbox[2]
       const height = prediction.bbox[3]
       const label = labels[parseInt(prediction.class)]
+      // calculateFeatures(height, width)
 
-      // NOTE Teste de console
-      console.log(label)
+      W.push(width.toFixed(4))
+      H.push(height.toFixed(4))
+      P.push((height / width).toFixed(4))
 
-      // Draw the bounding box.
-      ctx.strokeStyle = '#00FFFF'
+      // Change boxing color 
+      if (label === 'danger') {
+        // Draw the bounding box
+        ctx.strokeStyle = '#FF0000'
+
+        // Draw the label background
+        ctx.fillStyle = '#FF0000'
+      } else {
+        // Draw the bounding box
+        ctx.strokeStyle = '#00FFFF'
+
+        // Draw the label background
+        ctx.fillStyle = '#00FFFF'
+      }
+
       ctx.lineWidth = 4
       ctx.strokeRect(x, y, width, height)
-      // Draw the label background.
-      ctx.fillStyle = '#00FFFF'
+
       const textWidth = ctx.measureText(label).width
       const textHeight = parseInt(font, 10) // base 10
       ctx.fillRect(x, y, textWidth + 4, textHeight + 4)
     })
 
+    // NOTE Style for each detection
     predictions.forEach(prediction => {
       const x = prediction.bbox[0]
       const y = prediction.bbox[1]
       const label = labels[parseInt(prediction.class)]
-      // Draw the text last to ensure it's on top.
+      // Draw the text last to ensure it's on top
       ctx.fillStyle = '#000000'
       ctx.fillText(label, x, y)
     })
   }
 
   render() {
-    return (
-      <div>
-        <video
-          className="size"
-          autoPlay
-          playsInline
-          muted
-          ref={this.videoRef}
-          width="600"
-          height="500"
-        />
-        <canvas
-          className="size"
-          ref={this.canvasRef}
-          width="600"
-          height="500"
-        />
-      </div>
+    return ( <
+      div >
+      <
+      video src = {
+        VIDEO
+      }
+      className = "size"
+      autoPlay loop playsInline muted ref = {
+        this.videoRef
+      }
+      width = "600"
+      height = "335" /
+      >
+      <
+      canvas className = "size"
+      ref = {
+        this.canvasRef
+      }
+      width = "600"
+      height = "335" /
+      >
+      <
+      /div>
     )
   }
 }
 
 const rootElement = document.getElementById('root')
-ReactDOM.render(<App />, rootElement)
+ReactDOM.render( < App / > , rootElement)
