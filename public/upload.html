@@ -1,51 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Smart Toll</title>
-    <link rel="icon" href="/img/favicon.png">
-
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
-        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
-    <link rel="stylesheet" href="/css/styles.css">
+    <title>FilePond Plugin Media Preview</title>
+    <link href="https://unpkg.com/filepond/dist/filepond.css" rel="stylesheet">
+    <link href="./dist/filepond-plugin-media-preview.css" rel="stylesheet">
+    <style>
+        .demo {
+            text-align: center;
+            font-family: Helvetica;
+            margin: 4em auto 0;
+            width: 450px;
+        }
+        a {
+            color: dodgerblue;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
-
 <body>
 
-    <div class="wrapper">
-        <div class="container-fluid">
-            <div class="row" style="justify-content: center">
-                <div class="file-upload">
-                    <input type="file" id="myFile" onchange="uploadFile()" />
-                    <i class="fa fa-arrow-up"></i>
-                </div>
-            </div>
-            <div class="row" style="justify-content: center">
-                <p id="result" style="display: block; text-align: center"><br>Click on the button above or drag and drop
-                    a video file to upload!</p>
-            </div>
-            <div class="row" style="justify-content: center">
-                <button class="btn btn-success" id="btn-submit" style="display: none" onclick="submitVideo()"><a href="./player.html" style="color: white">Submit</a></button>
-            </div>
-        </div>
+    <div class="demo">
+        <h3>Media Preview plugin for FilePond demo</h3>
+        <input type="file" multiple="true"/>
+        <a href="https://github.com/nielsboogaard/filepond-plugin-media-preview">Return to the source code</a>
     </div>
+    
+    <script src="./dist/filepond-plugin-media-preview.js"></script>
+    <script src="https://unpkg.com/filepond/dist/filepond.js"></script>
+    
+    <script>
+        // Register the plugin with FilePond
+        FilePond.registerPlugin(FilePondPluginMediaPreview);
 
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"
-        integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous">
-    </script>
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+        // Get a reference to the file input element
+        const inputElement = document.querySelector('input[type="file"]');
+
+        // Create the FilePond instance
+        const pond = FilePond.create(inputElement);
+        // pond.addFile('./goodmorning.mp4');
+        // pond.addFile('./woodpecker.mp3');
     </script>
 
-    <script src="../js/index.js"></script>
 </body>
-
 </html>
