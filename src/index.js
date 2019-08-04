@@ -45,3 +45,4 @@ app.post('/upload', upload.single('video'),
 app.listen(port, () => {
     console.log('Server is up on port ' + port)
 })
+

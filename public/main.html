@@ -70,14 +70,14 @@
 
       <!-- Nav Item - Dashboard -->
       <li class="nav-item">
-        <a class="nav-link" href="index.html" style="width: 100%">
+        <a class="nav-link" href="main.html" style="width: 100%">
           <i class="fas fa-arrow-up"></i>
           <span>Upload video</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="index.html" style="width: 100%">
+        <a class="nav-link" href="player.html" style="width: 100%">
           <i class="fas fa-play-circle"></i>
-          <span>Play result</span></a>
+          <span>Play results</span></a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="https://github.com/plcpinho/techsummit" style="width: 100%" target="_blank">
@@ -176,11 +176,9 @@
         <div class="container-fluid">
 
           <!-- Page Heading -->
-          <h1 class="h3 mb-2 text-gray-800">Inference Time!</h1>
-          <p class="mb-4">Let's test a sample on the neural network trained previously! Once a video is submitted, the
-            app will input it on the net
-            using Tensorflow.js and make real-time detections. Each object will be registered as unique and stored on
-            blockchain.</p>
+          <h1 class="h3 mb-2 text-gray-800">Submit a Sample</h1>
+          <p class="mb-4">Let's test a sample on a real neural network! After a video submission, you can appreciate the state of the art
+             of real-time detection. After that, each detected car will be registered as unique and stored immutably on a blockchain network.</p>
 
           <!-- Content Row -->
           <div class="row">
@@ -201,15 +199,6 @@
                       </div>
                     </div>
                   </div>
-                  <!-- <p id="result">
-                  </p>
-                  <div style="display: flex; justify-content: center;">
-                    <a href="#" class="btn btn-success btn-icon-split" id="btn-submit" onclick="submitVideo()"
-                      style="display: none">
-                      <span class="icon text-white-50"><i class="fas fa-check"></i></span>
-                      <span class="text">Submit Video</span>
-                    </a>
-                  </div> -->
                 </div>
               </div>
             </div>
@@ -261,6 +250,8 @@
 
   <!-- Custom scripts for all pages-->
   <script src="js/sb-admin-2.js"></script>
+  <!-- <script src="sweetalert2.min.js"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
 
   <!-- FilePond custom scripts -->
   <script src="./dist/filepond-plugin-media-preview.js"></script>
@@ -288,8 +279,17 @@
 
     // Create the FilePond instance
     const pond = FilePond.create(inputElement);
-    // pond.addFile('./goodmorning.mp4');
-    // pond.addFile('./woodpecker.mp3');
+
+    pond.on('processfile', file => {
+      if (file == null) {
+        Swal.fire({
+          type: 'success',
+          title: 'Success!',
+          text: 'Your video has been uploaded',
+          footer: "<a href='./player.html'>View results here!</a>"
+        })
+      }
+    });
   </script>
 
 </body>
