@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Smart Toll</title>
+    <title>Smart Pass</title>
     <link rel="icon" href="./img/favicon.png">
 
     <!-- FilePond Upload -->
@@ -63,7 +63,7 @@
                 <div class="sidebar-brand-icon">
                     <i class="fas fa-car"></i>
                 </div>
-                <div class="sidebar-brand-text mx-3">Smart Toll</div>
+                <div class="sidebar-brand-text mx-3">Smart Pass</div>
             </a>
 
             <!-- Divider -->
@@ -73,12 +73,12 @@
             <li class="nav-item">
                 <a class="nav-link" href="main.html" style="width: 100%">
                     <i class="fas fa-arrow-up"></i>
-                    <span>Upload video</span></a>
+                    <span>Video Upload</span></a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="player.html" style="width: 100%">
                     <i class="fas fa-play-circle"></i>
-                    <span>Play result</span></a>
+                    <span>Dashboard</span></a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="https://github.com/plcpinho/techsummit" style="width: 100%" target="_blank">
@@ -104,12 +104,16 @@
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Car detection:</h6>
-                        <a class="collapse-item">Time: 10/05/19 08:54</a>
-                        <a class="collapse-item">ID: xyz</a>
-                        <!-- Divider -->
-                        <hr class="log-divider">
-                        <a class="collapse-item">Time: 10/05/19 08:54</a>
-                        <a class="collapse-item">ID: xyz</a>
+                        <ul id="log" style="padding: 0; list-style-type: none; overflow-y: scroll; max-height: 300px">
+                            <!-- <li class="collapse-item">Timestamp: 10/05/19 08:54</li>
+                            <li class="collapse-item">ID: xyz</li> -->
+                            <!-- Divider -->
+                            <!-- <li>
+                                <hr class="log-divider">
+                            </li>
+                            <li class="collapse-item">Timestamp: 10/05/19 08:54</li>
+                            <li class="collapse-item">ID: xyz</li> -->
+                        </ul>
                     </div>
                 </div>
             </li>
@@ -179,12 +183,102 @@
                 <div class="container-fluid">
 
                     <!-- Page Heading -->
-                    <h1 class="h3 mb-2 text-gray-800">Check the Results</h1>
+                    <!-- <h1 class="h3 mb-2 text-gray-800">Check the Results</h1>
                     <p class="mb-4">Using AI techniques such as transfer learning and deep learning, is it possible to render
                      impressive real-time frames. Then, when a car cross an imaginary line, a blockchain transaction containing
                      immutable data is made, ensuring quickness and reliabily among distributes nodes of the network.
-                    </p>
+                    </p> -->
+                    <div class="row">
 
+                        <!-- Cars Detected -->
+                        <div class="col-xl-3 col-md-6 mb-4">
+                            <div class="card border-left-primary shadow h-100 py-2">
+                                <div class="card-body">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col mr-2">
+                                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
+                                                Cars Detected</div>
+                                            <div class="h5 mb-0 font-weight-bold text-gray-800" id="counter"
+                                                style="margin-top: 10%">0</div>
+                                        </div>
+                                        <div class="col-auto">
+                                            <i class="fas fa-car-side fa-2x text-gray-300" style="margin-top: 50%"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Traffic Rate -->
+                        <div class="col-xl-3 col-md-6 mb-4">
+                            <div class="card border-left-info shadow h-100 py-2">
+                                <div class="card-body">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col mr-2">
+                                            <div class="text-xs font-weight-bold text-info text-uppercase mb-1">Traffic
+                                                Rate (cars/s)
+                                            </div>
+                                            <div class="row no-gutters align-items-center" style="margin-top: 10%">
+                                                <div class="col-auto">
+                                                    <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800"
+                                                        id="traffic-rate">0</div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="progress progress-sm mr-2">
+                                                        <div class="progress-bar bg-info" id="progressbar"
+                                                            role="progressbar" style="width: 0%" aria-valuenow="0"
+                                                            aria-valuemin="0" aria-valuemax="1"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-auto">
+                                            <i class="fas fa-chart-line fa-2x text-gray-300"
+                                                style="margin-top: 50%"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Fare -->
+                        <div class="col-xl-3 col-md-6 mb-4">
+                            <div class="card border-left-info shadow h-100 py-2">
+                                <div class="card-body">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col mr-2">
+                                            <div class="text-xs font-weight-bold text-info text-uppercase mb-1">Fare
+                                                (US$)
+                                            </div>
+                                            <div class="row no-gutters align-items-center" style="margin-top: 4%">
+                                                <input class="form-control" type="number" value="4" id="fare">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Earning -->
+                        <div class="col-xl-3 col-md-6 mb-4">
+                            <div class="card border-left-warning shadow h-100 py-2">
+                                <div class="card-body">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col mr-2">
+                                            <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">
+                                                Earnings</div>
+                                            <div class="h5 mb-0 font-weight-bold text-gray-800" id="earnings"
+                                                style="margin-top: 10%">US$ 0.00</div>
+                                        </div>
+                                        <div class="col-auto">
+                                            <i class="fas fa-dollar-sign fa-2x text-gray-300"
+                                                style="margin-top: 50%"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <!-- Content Row -->
                     <div class="row">
 
@@ -207,15 +301,15 @@
                                         <div style="position: relative; display: none" id="video-player">
                                             <div style="position: absolute">
                                                 <video src="./video.mp4" id="video" autoPlay loop playsInline muted
-                                                    width="600" height="335" style="z-index: 1"></video>
+                                                    width="690" height="390" style="z-index: 1"></video>
                                             </div>
-                                            <canvas class="size" id="canvas" style="transform: scaleX(1)" width="600"
-                                                height="335"></canvas>
+                                            <canvas class="size" id="canvas" style="transform: scaleX(1)" width="690"
+                                                height="390"></canvas>
                                         </div>
 
                                         <!-- While the page is loading -->
                                         <div class="text-center" id="loading"
-                                            style="vertical-align: middle; height: 335px; align-items: center; justify-content: center; display: flex">
+                                            style="vertical-align: middle; height: 400px; align-items: center; justify-content: center; display: flex">
                                             <div class="spinner-border text-primary" style="width: 4rem; height: 4rem;"
                                                 role="status">
                                                 <span class="sr-only">Loading...</span>
@@ -284,7 +378,7 @@
     <!-- Tensorflow.js -->
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.0.0/dist/tf.min.js"></script>
 
-    <!-- Smart Toll Scripts -->
+    <!-- Smart Pass Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
     <script src="js/player.js"></script>
 

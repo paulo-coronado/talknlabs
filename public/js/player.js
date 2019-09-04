@@ -4,10 +4,17 @@ const MODEL_JSON = MODEL_URL + 'model.json'
 
 const VIDEO = '../video.mp4'
 
+var counter = 0
+var time = 0
+var timeDiff = 0
+var startTime = null
+var endTime = null
+var earnings = 0
+var isStart = true
+
 $('document').ready(() => {
   var videoRef = $('#video')
   var canvasRef = $('#canvas')
-
 
   $.ajax({
     url: VIDEO,
@@ -175,21 +182,72 @@ const renderPredictions = (canvas, predictions, labels) => {
   ctx.font = font
   ctx.textBaseline = 'top'
 
+  // 
+  ctx.beginPath()
+  ctx.strokeStyle = "#00FF00"
+  ctx.moveTo(0, 320)
+  ctx.lineTo(800, 320)
+  ctx.stroke()
 
   // Only runs if an object was detected (forEach)
   predictions.forEach(prediction => {
+    if (isStart) {
+      startTime = new Date()
+      isStart = false
+    }
+    endTime = new Date()
+
+    timeDiff = endTime - startTime; //in ms
+    // strip the ms
+    timeDiff /= 1000;
+
+    // get seconds 
+    time = Math.round(timeDiff);
+
     const x = prediction.bbox[0]
     const y = prediction.bbox[1]
     const width = prediction.bbox[2]
     const height = prediction.bbox[3]
     const label = labels[parseInt(prediction.class)]
-    // calculateFeatures(height, width)
+
+    // This code runs if a car is detected
+    if (parseInt(y + height/2) > 314 && parseInt(y + height/2) < 326) {
+      counter++
+      earnings += Number($('#fare').val())
+      $('#earnings').html('US$ ' + (earnings).toFixed(2).toString())
+      $("#counter").html(counter.toString())
+      $('#progressbar').attr('aria-valuenow', (counter / time).toFixed(2)).css('width', ((counter / time).toFixed(2) * 100).toString() + '%')
+      $('#traffic-rate').html((counter / time).toFixed(2))
+
+      function uuidv4() {
+        return ([1e7] + -1e3 + -4e3 + -8e3 + -1e11).replace(/[018]/g, c =>
+          (c ^ crypto.getRandomValues(new Uint8Array(1))[0] & 15 >> c / 4).toString(16)
+        )
+      }
+
+      var nodeTime = document.createElement("LI")
+      var nodeID = document.createElement("LI")
+      var nodeDivider = document.createElement("LI")
+      var divider = document.createElement("hr")
+      divider.classList.add("log-divider")
+      var textnodeTime = document.createTextNode("Timestamp: " + endTime.toLocaleString())
+      var textnodeID = document.createTextNode("ID: " + uuidv4().substring(0, 23))
+      nodeTime.appendChild(textnodeTime)
+      nodeID.appendChild(textnodeID)
+      nodeDivider.appendChild(divider)
+      nodeTime.classList.add("collapse-item")
+      nodeID.classList.add("collapse-item")
+      document.getElementById("log").prepend(nodeDivider)
+      document.getElementById("log").prepend(nodeTime)
+      document.getElementById("log").prepend(nodeID)
+      // $('#log').html('<a class="collapse-item">Timestamp: ' + endTime.toLocaleString() + '</a><a class="collapse-item">ID: ' + uuidv4().substring(0, 23) + '</a>')
+    }
 
     // Draw the bounding box
-    ctx.strokeStyle = '#00FFFF'
+    ctx.strokeStyle = '#0062ff'
 
     // Draw the label background
-    ctx.fillStyle = '#00FFFF'
+    ctx.fillStyle = '#0062ff'
 
     ctx.lineWidth = 4
     ctx.strokeRect(x, y, width, height)
@@ -205,7 +263,7 @@ const renderPredictions = (canvas, predictions, labels) => {
     const y = prediction.bbox[1]
     const label = labels[parseInt(prediction.class)]
     // Draw the text last to ensure it's on top
-    ctx.fillStyle = '#000000'
+    ctx.fillStyle = '#ffffff'
     ctx.fillText(label, x, y)
   })
 }
