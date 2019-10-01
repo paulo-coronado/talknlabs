@@ -16,7 +16,7 @@ PAULO - IA + BLOCKCHAIN
 Como usar o Cloud Annotations , uma GUI da Web, que nos permite fazer upload de imagens e associá-las a anotações. Uma ferramenta de anotação de imagem de código aberto rápida, fácil e colaborativa.
 
 
-### [Parte 4](/content/md/machinelarning-objectstorage.md)
+### [Parte 4](/content/md/instancias.md)
 Como criar uma Instancia de Machine Learning e obter as credenciais dos serviços criados.  
 
 
