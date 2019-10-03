@@ -46,4 +46,4 @@ Crie os rótulos desejados e começe as anotações. O nosso rótulo será apena
 
 ***
 Links Rápidos:
-[Índice](https://github.com/plcpinho/talknlabs/)- [Parte 1](/content/intro.md) - [Parte 2](/content/prereq.md) - **[Parte 3](/content/md/cloudannotations.md)** - [Parte 4](/content/md/instancias.md) - [Parte 5](/content/device.md) - [Parte 6](/content/view.md) - [Parte 7](/content/nodered.md) - [Parte 8](/content/next.md)
+[Índice](https://github.com/plcpinho/talknlabs/)- [Parte 1](/content/intro.md) - [Parte 2](/content/prereq.md) - **[Parte 3](/content/md/cloudannotations.md)** - [Parte 4](/content/md/instancias.md) - [Parte 5](/content/device.md) - [Parte 6](/content/md/blockchain.md)

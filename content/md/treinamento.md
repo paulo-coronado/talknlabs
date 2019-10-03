@@ -31,9 +31,22 @@ Após a conclusão do treinamento, podemos fazer o download do nosso modelo:
 
 Isso fará o download de um model_*diretório do nosso gráfico TensorFlow, que é o que usaremos em nossa API.
 
-Assim que o download for concluído, procure pela pasta `model_web`. Copie e cole em nosso projeto, na pasta `public`.
+
+## Adicionar o modelo TensorFlow.js ao aplicativo
+
+Assim que o download for concluído, copie o `model_web` gerado a partir do passo a passo de detecção de objetos e cole-o na `public` - pasta deste repositório.
+
+## Execute o aplicativo
+
+1.
+`npm install`
+
+2.
+`npm start`
+
+Abra http://localhost:3000 para visualizá-lo no navegador.
 
 
 ***
 Links Rápidos:
-[Índice](https://github.com/plcpinho/talknlabs/) - [Parte 1](/content/intro.md) - [Parte 2](/content/prereq.md) - [Parte 3](/content/md/cloudannotations.md) - [Parte 4](/content/md/instancias.md) - **[Parte 5](/content/md/treinamento.md)** - [Parte 7](/content/nodered.md) - [Parte 8](/content/next.md)
+[Índice](https://github.com/plcpinho/talknlabs/) - [Parte 1](/content/intro.md) - [Parte 2](/content/prereq.md) - [Parte 3](/content/md/cloudannotations.md) - [Parte 4](/content/md/instancias.md) - **[Parte 5](/content/md/treinamento.md)** - [Parte 6](/content/md/blockchain.md)
