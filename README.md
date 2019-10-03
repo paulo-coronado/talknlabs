@@ -10,7 +10,7 @@ Materiais do IBM Talk' n' Labs - 11/10/2019
 PAULO - INTRODUÇÃO LAB + PRE-REQUISITOS
 
 ### [Parte 2](/content/md/prereq.md)
-PAULO - IA + BLOCKCHAIN
+PAULO - INTRODUÇÃO IA + BLOCKCHAIN
 
 ### [Parte 3](/content/md/cloudannotations.md)
 Como usar o Cloud Annotations , uma GUI da Web, que nos permite fazer upload de imagens e associá-las a anotações. Uma ferramenta de anotação de imagem de código aberto rápida, fácil e colaborativa.
