@@ -24,7 +24,7 @@ Como criar uma Instancia de Machine Learning e obter as credenciais dos serviço
 Como fazer o treinamento do modelo.
 
 ### [Parte 6](/content/view.md)
-z
+x
 
 ### [Parte 7](/content/nodered.md)
 a 
