@@ -42,7 +42,7 @@ Após sua criação e nomeação, escolha um tipo de anotação. Para o laborat�
 
 ![uploadvideo](/content/images/cloudannotations-7.png)
 
-Crie o rótulo do objeto (carro) e faça as demarcões com um retângulo entorno dele. Cloud Annotations Tool interpretará as anotações e as armazenará em um *JSON file* no Cloud Object Storage.
+Crie o rótulo do objeto (carro) e faça as demarcacões com um retângulo entorno dele. Cloud Annotations Tool interpretará as anotações e as armazenará em um *JSON file* no Cloud Object Storage.
 
 ![annotations](/content/images/cloudannotations-8.PNG)
 
