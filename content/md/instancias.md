@@ -3,7 +3,7 @@
 
 O **IBM Watson Machine Learning** é uma oferta IBM Cloud de serviço completo, que possibilita que desenvolvedores e cientistas de dados trabalhem juntos facilmente para integrar recursos preditivos aos seus aplicativos. O serviço de *Machine Learning* contempla um conjunto de APIs REST que podem ser chamadas utilizando quaisquer linguagem de programação para desenvolver aplicativos inteligentes e performáticos.
 
-## Criando uma instância e credenciais do Watson Machine Learning
+## Criando instância e credenciais do Watson Machine Learning
 
 Para criar uma instância do Watson Machine Learning, navegue de volta para o **IBM Cloud**, vá em **catálogo**, clique em **AI** e procure por **Machine Learning**.
 
@@ -17,7 +17,7 @@ Após criada a instância do serviço, no menu lateral esquerdo, clique em **Cre
 
 ![machinelearning-credentials](/content/images/mlcredentials.png)
 
-## Acesse as Credenciais 
+## Criando credentiais do serviço Object Storage 
 
 Já possuímos uma instância do Object Storage e Watson Machine Learning, agora para treinar um modelo de Inteligência Artificial será necessário utilizar os dados do Cloud Object Storage e a poderosa infraestrutura do serviço Watson Machine Learning em conjunto. 
 
@@ -38,7 +38,6 @@ Clique em **Criar Credencial**. Deixe a configuração padrão e clique em **Inc
 Uma vez adicionada as credenciais, clique no menu suspenso em **Visualizar Credenciais** e anote as informações.
 
 ![credentials-objectstorage](/content/images/cloudannotations-11.png)
-
 
 Para Machine Learning, acesse novamente seus recursos na página inicial do `IBM Cloud`. Clique em serviços e abra sua instância `Machine Learning`. Navegue até a guia Credenciais de serviço.
 
