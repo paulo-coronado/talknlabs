@@ -1,6 +1,6 @@
-# Parte 2 - Como usar o Cloud Annotations
+# Parte 2 - Cloud Annotations Tool
 
-Para treinar um modelo de detecção de objeto, precisamos de um conjunto de dados de imagens e anotações delimitadoras do objeto.
+Para treinar um modelo de detecção de objeto, é necessária realizar a coleta de dados (automóveis) e aplicar algoritmos de *Transfer Learning* a fim de treinar o modelo.
 
 O `IBM Cloud` oferece uma pequena camada de armazenamento de objetos, que inclui 25 GB de armazenamento gratuitamente.
 
