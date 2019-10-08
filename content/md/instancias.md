@@ -23,15 +23,15 @@ Para isso, acesse seus recursos na página inicial do **IBM Cloud**.
 
 Clique em **Armazenamento** e abra sua instância do Object Storage.
 
-Então, navegue até a guia **Credenciais de serviço**.
+Então, navegue até a guia **Credenciais de Serviço**.
 
 ![credentials-objectstorage](/content/images/cloudannotations-9.PNG)
 
-Clique em **Criar Credencial**. Você pode deixar a configuração padrão e incluir.
+Clique em **Criar Credencial**. Deixe a configuração padrão e clique em **Incluir**.
 
 ![credentials-objectstorage](/content/images/cloudannotations-10.PNG)
 
-Depois de adicionado, clique no menu suspenso em visualizar credenciais e anote as informações.
+Uma vez adicionada as credenciais, clique no menu suspenso em **Visualizar Credenciais** e anote as informações.
 
 ![credentials-objectstorage](/content/images/cloudannotations-11.png)
 
