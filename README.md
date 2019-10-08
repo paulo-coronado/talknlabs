@@ -11,7 +11,7 @@ Materiais do IBM Talk' n' Labs - 11/10/2019
 Introdução do Laboratório e pré-requisitos.
 
 ### [Parte 2](/content/md/cloudannotations.md)
-Utilize a ferramenta Cloud Annotations, uma GUI que permite fazer upload de imagens e associá-las à anotações. Automatize o processo de aquisição de dados, utilizando código aberto colaborativamente.
+Utilize a ferramenta Cloud Annotations, uma GUI que permite fazer upload de imagens e associá-las à anotações. Automatize o processo de aquisição de dados, utilizando esta ferramenta de colaborativa e de código aberto.
 
 ### [Parte 3](/content/md/instancias.md)
 Crie uma instância de Watson Machine Learning e obtenha suas credenciais de acesso.  
