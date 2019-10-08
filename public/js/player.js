@@ -11,6 +11,8 @@ var startTime = null
 var endTime = null
 var earnings = 0
 var isStart = true
+var id = ''
+var timestamp = ''
 
 $('document').ready(() => {
   var videoRef = $('#video')
@@ -211,7 +213,7 @@ const renderPredictions = (canvas, predictions, labels) => {
     const label = labels[parseInt(prediction.class)]
 
     // This code runs if a car is detected
-    if (parseInt(y + height/2) > 314 && parseInt(y + height/2) < 326) {
+    if (parseInt(y + height / 2) > 314 && parseInt(y + height / 2) < 326) {
       counter++
       earnings += Number($('#fare').val())
       $('#earnings').html('US$ ' + (earnings).toFixed(2).toString())
@@ -225,13 +227,31 @@ const renderPredictions = (canvas, predictions, labels) => {
         )
       }
 
+      id = uuidv4().substring(0, 23)
+      timestamp = endTime.toLocaleString()
+
+      $.ajax({
+        url: 'http://localhost:3000/send',
+        contentType: 'application/json',
+        cache: false,
+        method: 'POST',
+        dataType: 'json',
+        data: JSON.stringify({
+          id: id,
+          timestamp: timestamp
+        }),
+        success: function (data) {
+          console.log(data);
+        }
+      })
+
       var nodeTime = document.createElement("LI")
       var nodeID = document.createElement("LI")
       var nodeDivider = document.createElement("LI")
       var divider = document.createElement("hr")
       divider.classList.add("log-divider")
-      var textnodeTime = document.createTextNode("Timestamp: " + endTime.toLocaleString())
-      var textnodeID = document.createTextNode("ID: " + uuidv4().substring(0, 23))
+      var textnodeTime = document.createTextNode("Timestamp: " + timestamp)
+      var textnodeID = document.createTextNode("ID: " + id)
       nodeTime.appendChild(textnodeTime)
       nodeID.appendChild(textnodeID)
       nodeDivider.appendChild(divider)
