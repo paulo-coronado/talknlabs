@@ -1,32 +1,33 @@
-# Parte 3 - Criando uma instância de Machine Learning e acessando as credencias dos serviços criados
+# Parte 3 - Criando uma instância do Watson Machine Learning
 
 
-O `IBM Watson Machine Learning` é uma oferta `IBM Cloud` de serviço completo, que possibilita que desenvolvedores e cientistas de dados trabalhem juntos facilmente para integrar recursos preditivos aos seus aplicativos. O serviço `Machine Learning` é um conjunto de APIs de REST que podem ser chamadas de qualquer linguagem de programação para desenvolver aplicativos que tomam decisões mais inteligentes, resolvem problemas difíceis e melhoram os resultados do usuário.
+O **IBM Watson Machine Learning** é uma oferta IBM Cloud de serviço completo, que possibilita que desenvolvedores e cientistas de dados trabalhem juntos facilmente para integrar recursos preditivos aos seus aplicativos. O serviço de *Machine Learning* contempla um conjunto de APIs REST que podem ser chamadas utilizando quaisquer linguagem de programação para desenvolver aplicativos inteligentes e performáticos.
 
-## Criar uma instância de Machine Learning
+## Criando uma instância de Machine Learning
 
-Para criar uma instância do `Watson Machine Learning`, navegue de volta para o `IBM Cloud`, vá em catálogo, clique em AI e procure por Machine Learning.
+Para criar uma instância do Watson Machine Learning, navegue de volta para o **IBM Cloud**, vá em **catálogo**, clique em **AI** e procure por **Machine Learning**.
 
 ![machinelearning-encontrar](/content/images/machinelearning-1.png)
 
-
-Escolha um plano de preços e clique em Criar.
+Escolha um plano de preços e clique em **Criar**.
 
 ![machinelearning-criar](/content/images/machinelearning-2.PNG)
 
-## Acessar as Credenciais 
+## Acesse as Credenciais 
 
-Já temos uma instância do `Object Storage` e `Machine Learning`, mas agora precisamos de uma maneira de acessar nossos dados de fora do `IBM Cloud`. 
+Já possuímos uma instância do Object Storage e Watson Machine Learning, agora para treinar um modelo de Inteligência Artificial será necessário utilizar os dados do Cloud Object Storage e a poderosa infraestrutura do serviço Watson Machine Learning em conjunto. 
 
-Para fazer isso, acesse seus recursos na página inicial do `IBM Cloud`.
+Para isso, acesse seus recursos na página inicial do **IBM Cloud**.
 
 ![painelrecursos](/content/images/painelrecursos-1.PNG)
 
-Para Object Storage, clique em armazenamento e abra sua instância `Object Storage`. Navegue até a guia Credenciais de serviço.
+Clique em **Armazenamento** e abra sua instância do Object Storage.
+
+Então, navegue até a guia **Credenciais de serviço**.
 
 ![credentials-objectstorage](/content/images/cloudannotations-9.PNG)
 
-Clique em Criar Credencial. Você pode deixar a configuração padrão e incluir.
+Clique em **Criar Credencial**. Você pode deixar a configuração padrão e incluir.
 
 ![credentials-objectstorage](/content/images/cloudannotations-10.PNG)
 
