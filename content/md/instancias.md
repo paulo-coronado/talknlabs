@@ -31,7 +31,7 @@ Então, navegue até a guia **Credenciais de Serviço**.
 
 ![credentials-objectstorage](/content/images/cloudannotations-9.PNG)
 
-Clique em **Criar Credencial**. Deixe a configuração padrão e clique em **Incluir**.
+Clique em **Criar Credencial** e preencha as informações como ilustrado na imagem abaixo e clique em **Incluir**.
 
 ![credentials-objectstorage](/content/images/cloudannotations-10.PNG)
 
