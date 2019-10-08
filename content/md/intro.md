@@ -1,6 +1,6 @@
 # Parte 1 - Introdução
 
-## Agenda Talk'n'Labs
+## Agenda Talk'n Labs
 1. Pré-requisitos e Tecnologias	
 2. Introdução:
     - Inteligência Artificial Aplicada
@@ -20,18 +20,16 @@ Node.js – versão 8.10.0 ou superior: https://nodejs.org/en/download/
 
 ## Tecnologias
 
-IBM  Cloud Annotations
+**IBM  Cloud Annotations**
 - https://cloud.annotations.ai/
 
-Watson Machine Learning
+**Watson Machine Learning**
 - https://www.ibm.com/br-pt/cloud/machine-learning
 
-Blockchain Platform
+**IBM Blockchain Platform**
 - https://www.ibm.com/br-pt/blockchain/platform
 
-IBM Object Storage 
-
-TensorFlow.js
+**TensorFlow.js**
 - https://cloud.ibm.com/catalog
 
 
