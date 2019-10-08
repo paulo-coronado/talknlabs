@@ -32,7 +32,7 @@ Atribua um nome exclusivo ao *bucket*.
 
 ![bucketname](/content/images/cloudannotations-5.PNG)
 
-Após criar e nomear o *bucket*, escolha um tipo de anotação. Para o laboratório será utilizado o *Localization* pois o sistema não apenas classificará um objeto, mas também o detectará na imagem. Esse tipo de abordagem permite desenhar *bounding boxes* (caixas delimitadoras entorno do objeto alvo).
+Após sua criação e nomeação, escolha um tipo de anotação. Para o laboratório será utilizado o *Localization* pois o sistema não apenas classificará um objeto, mas também o detectará na imagem. Esse tipo de abordagem permite desenhar *bounding boxes* (caixas delimitadoras entorno do objeto alvo).
 
 ![buckettype](/content/images/cloudannotations-6.PNG)
 
