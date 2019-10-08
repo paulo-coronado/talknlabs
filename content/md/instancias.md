@@ -1,4 +1,4 @@
-# Parte 4 - Criando uma instância de Machine Learning e acessando as credencias dos serviços criados
+# Parte 3 - Criando uma instância de Machine Learning e acessando as credencias dos serviços criados
 
 
 O `IBM Watson Machine Learning` é uma oferta `IBM Cloud` de serviço completo, que possibilita que desenvolvedores e cientistas de dados trabalhem juntos facilmente para integrar recursos preditivos aos seus aplicativos. O serviço `Machine Learning` é um conjunto de APIs de REST que podem ser chamadas de qualquer linguagem de programação para desenvolver aplicativos que tomam decisões mais inteligentes, resolvem problemas difíceis e melhoram os resultados do usuário.

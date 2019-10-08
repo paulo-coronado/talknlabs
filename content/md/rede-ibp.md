@@ -1,4 +1,4 @@
-# IBM Blockchain Plataform
+# Parte 5 - IBM Blockchain Plataform
 
 O `IBM Blockchain Platform` é uma oferta de blockchain-as-a-service que permite que você desenvolva, implemente e opere aplicativos e redes de blockchain através do `IBM Cloud`.
 

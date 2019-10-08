@@ -1,4 +1,4 @@
-# Parte 3 - Como usar o Cloud Annotations
+# Parte 2 - Como usar o Cloud Annotations
 
 Para treinar um modelo de detecção de objeto, precisamos de um conjunto de dados de imagens e anotações delimitadoras do objeto.
 

@@ -1,6 +1,6 @@
-# TALK'N'LABS - Introdução e Pré-Requisitos
+# Parte 1 - Introdução
 
-## Agenda
+## Agenda Talk'n'Labs
 1. Pré-requisitos e Tecnologias	
 2. Introdução:
     - Inteligência Artificial Aplicada
