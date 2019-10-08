@@ -1,42 +1,44 @@
 # Parte 2 - Cloud Annotations Tool
 
-Para treinar um modelo de detecção de objeto, é necessária realizar a coleta de dados (automóveis) e aplicar algoritmos de *Transfer Learning* a fim de treinar o modelo.
+Para treinar um modelo de detecção de objetos, é necessário realizar a coleta de dados (frames de automóveis e suas anotações) e aplicar algoritmos de I.A. (como *Transfer Learning* e Redes Neurais).
 
-O `IBM Cloud` oferece uma pequena camada de armazenamento de objetos, que inclui 25 GB de armazenamento gratuitamente.
+Para armazenar as dados relatados acima, crie uma instância do **IBM Cloud Object Storage** (serviço da camada gratuíta para armazenamento de dados).
 
 ## Preparando os dados para treinamento
 
-Para usar o `Cloud Annotations`, navegue para cloud.annotations.ai e clique em Continuar com o `IBM Cloud`.
+Para usar o **Cloud Annotations Tool**, navegue para https://cloud.annotations.ai e clique em `Continuar com o IBM Cloud`.
 
 ![paginainicial](/content/images/cloudannotations-1.PNG)
 
-Uma vez logado, se não tivermos uma instância do `Object Storage`, precisaremos criar uma.
+Uma vez logado, caso não possua uma instância do Object Storage, crie uma.
 
-O `IBM Cloud Object Storage` é um serviço de armazenamento em nuvem altamente escalável que foi projetado para a alta durabilidade, a resiliência e a segurança.
+O **IBM Cloud Object Storage** é um serviço de armazenamento em nuvem altamente escalável que foi projetado para a alta durabilidade, a resiliência e a segurança.
 
-Clique em Get started para ser direcionado ao `IBM Cloud`, onde é possível criar uma instância do `Object Storage`.
+Clique em `Get started` para ser direcionado ao IBM Cloud, onde será possível criar uma instância do Object Storage.
 
 ![criarobjectstorage](/content/images/cloudannotations-2.PNG)
 
-Escolha um plano de preços e clique em criar.
+Escolha o plano de preços "Lite", e clique em `Criar`.
 
 ![objectstorage](/content/images/cloudannotations-3.PNG)
 
-Depois que sua instância for provisionada, volte para cloud.annotations.ai e atualize a página.
+Uma vez que com serviço instanciado, volte para https://cloud.annotations.ai e atualize a página.
 
-Armazenaremos nosso vídeo e as anotações em um Bucket. Podemos criar um Bucket clicando em iniciar um novo projeto.
+O modelo, os frames utilizados no treinamento e as suas respectivas anotaçõesserão armazenadas em um *bucket*. Crie-o clicando no botão de iniciar um novo projeto.
 
 ![bucket](/content/images/cloudannotations-4.PNG)
 
-Atribua um nome exclusivo ao Bucket.
+Atribua um nome exclusivo ao *bucket*.
 
 ![bucketname](/content/images/cloudannotations-5.PNG)
 
-Depois de criar e nomear o Bucket, escolha um tipo de anotação. Para o nosso laboratório utilizaremos o Localization. Esse tipo nos permite desenhar retângulos de caixas delimitadoras em nossas imagens.
+Após criar e nomear o *bucket*, escolha um tipo de anotação. Para o laboratório será utilizado o *Localization* pois o sistema não apenas classificará um objeto, mas também o detectará na imagem. Esse tipo de abordagem permite desenhar *bounding boxes* (caixas delimitadoras entorno do objeto alvo).
 
 ![buckettype](/content/images/cloudannotations-6.PNG)
 
-O próximo passo é rotular os dados. Na página inicial do Bucket, clicando em File, podemos fazer o upload do vídeo.
+É hora de rotular os dados, ou seja, "ensinar" à máquina quais objetos devem ser detectados. Então, na página inicial do *bucket*, clicando em `File`, podemos fazer o upload do vídeo.
+
+A fim de padronizar os dados, clique no *link* para fazer o *download* do um vídeo-exemplo que será utilizado neste laboratório.
 
 ![uploadvideo](/content/images/cloudannotations-7.png)
 
