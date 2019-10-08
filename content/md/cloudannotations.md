@@ -24,7 +24,7 @@ Escolha o plano de preços "Lite", e clique em `Criar`.
 
 Uma vez que com serviço instanciado, volte para https://cloud.annotations.ai e atualize a página.
 
-O modelo, os frames utilizados no treinamento e as suas respectivas anotaçõesserão armazenadas em um *bucket*. Crie-o clicando no botão de iniciar um novo projeto.
+Crie um *bucket* para armazenar dados do projeto, tais como modelo, frames e as suas respectivas anotações.
 
 ![bucket](/content/images/cloudannotations-4.PNG)
 
