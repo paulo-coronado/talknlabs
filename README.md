@@ -1,5 +1,5 @@
 # Inteligência Artificial e BIockchain na Prática 
-Materiais do IBM Talk' n' Labs - 11/10/2019
+Materiais do IBM Talk'n Labs - 11/10/2019
 
 <p align="left">
   <img src="./content/images/ibmcloud-talknlabs.PNG">
@@ -11,17 +11,17 @@ Materiais do IBM Talk' n' Labs - 11/10/2019
 Introdução do Laboratório e pré-requisitos.
 
 ### [Parte 2](/content/md/cloudannotations.md)
-Utilize a ferramenta Cloud Annotations, uma GUI que permite fazer upload de imagens e associá-las à anotações. Automatize o processo de aquisição de dados, utilizando esta ferramenta de colaborativa e de código aberto.
+Utilize a ferramenta Cloud Annotations, uma GUI que permite fazer *upload* de imagens e associá-las à anotações. Automatize o processo de aquisição de dados, utilizando esta ferramenta de colaborativa e de código aberto.
 
 ### [Parte 3](/content/md/instancias.md)
-Crie uma instância de Watson Machine Learning e obtenha suas credenciais de acesso.  
+Crie uma instância de **Watson Machine Learning** e obtenha suas credenciais de acesso.  
 
 
 ### [Parte 4](/content/md/treinamento.md)
-Treine seu um modelo customizado de detecção de objetos na Cloud.
+Treine seu um modelo customizado de detecção de objetos na *Cloud*.
 
 ### [Parte 5](/content/md/rede-ibp.md)
-Integre uma aplicação a uma de rede Blockchain hospedado no IBP (IBM Blockchain Platform) e faça transações de forma ágil e segura.
+Integre uma aplicação a uma de rede *Blockchain* hospedado no IBP (**IBM Blockchain Platform**) e faça transações de forma ágil e segura.
 
 
 ***
