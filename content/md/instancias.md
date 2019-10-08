@@ -15,7 +15,7 @@ Escolha um plano de preços e clique em **Criar**.
 
 Após criada a instância do serviço, no menu lateral esquerdo, clique em **Credenciais de Serviço** e adicione uma nova credencial com as seguintes configurações:
 
-![machinelearning-credentials](/content/images/mlcredentials.PNG)
+![machinelearning-credentials](/content/images/mlcredentials.png)
 
 ## Acesse as Credenciais 
 
