@@ -38,7 +38,9 @@ Após sua criação e nomeação, escolha um tipo de anotação. Para o laborat�
 
 É hora de rotular os dados, ou seja, "ensinar" à máquina quais objetos devem ser detectados. Então, na página inicial do *bucket*, clicando em ***File***, podemos fazer o upload do vídeo.
 
-A fim de padronizar os dados, clique no *link* para fazer o *download* do um vídeo-exemplo que será utilizado neste laboratório.
+```diff
+- A fim de padronizar os dados, clique no *link* para fazer o *download* do um vídeo-exemplo que será utilizado neste laboratório, e então faça o seu *upload* para o Cloud Annotations Tool.
+```
 
 ![uploadvideo](/content/images/cloudannotations-7.png)
 
