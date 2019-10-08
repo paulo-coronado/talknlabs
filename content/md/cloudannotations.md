@@ -38,8 +38,8 @@ Após sua criação e nomeação, escolha um tipo de anotação. Para o laborat�
 
 É hora de rotular os dados, ou seja, "ensinar" à máquina quais objetos devem ser detectados. Então, na página inicial do *bucket*, clicando em ***File***, podemos fazer o upload do vídeo.
 
-<p style='color:red'>A fim de padronizar os dados, clique no <b>link</b> para fazer o <b>download</b> do um vídeo-exemplo que será utilizado neste laboratório, e então faça o seu <b>upload</b> para o Cloud Annotations Tool.</p>
-
+<span style='color:red'>A fim de padronizar os dados, clique no <b>link</b> para fazer o <b>download</b> do um vídeo-exemplo que será utilizado neste laboratório, e então faça o seu <b>upload</b> para o Cloud Annotations Tool.</span>
+<span style="color:blue">some *This is Blue italic.* text</span>
 ![uploadvideo](/content/images/cloudannotations-7.png)
 
 Crie os rótulos desejados e começe as anotações. O nosso rótulo será apenas carro.
