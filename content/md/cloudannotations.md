@@ -6,7 +6,7 @@ Para armazenar as dados relatados acima, crie uma instância do **IBM Cloud Obje
 
 ## Preparando os dados para treinamento
 
-Para usar o **Cloud Annotations Tool**, navegue para https://cloud.annotations.ai e clique em `Continuar com o IBM Cloud`.
+Para usar o **Cloud Annotations Tool**, navegue para https://cloud.annotations.ai e clique em **Continuar com o IBM Cloud**.
 
 ![paginainicial](/content/images/cloudannotations-1.PNG)
 
