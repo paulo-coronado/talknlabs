@@ -33,6 +33,8 @@ Então, navegue até a guia **Credenciais de Serviço**.
 
 Clique em **Criar Credencial** e preencha as informações como ilustrado na imagem abaixo e clique em **Incluir**.
 
+**OBS.: Não esqueça de incluir a credencial HMAC!**
+
 ![credentials-objectstorage](/content/images/cacredentials.png)
 
 Uma vez adicionada as credenciais, clique no menu suspenso em **Visualizar Credenciais** e anote as informações.
