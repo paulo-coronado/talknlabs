@@ -1,4 +1,4 @@
-# Parte 5 - Treinamento do Modelo
+# Parte 4 - Treinamento do Modelo
 
 Depois de coletarmos e rotularmos nossas imagens, estamos prontos para começar a treinar nosso modelo.
 

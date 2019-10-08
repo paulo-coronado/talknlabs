@@ -20,7 +20,7 @@ Como criar uma Instancia de Machine Learning e obter as credenciais dos serviço
 ### [Parte 4](/content/md/treinamento.md)
 Como fazer o treinamento do modelo.
 
-### [Parte 5](/content/md/blockchain.md)
+### [Parte 5](/content/md/rede-ibp.md)
 Como integrar a Rede Blockchain
 
 
