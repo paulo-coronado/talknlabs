@@ -1,7 +1,7 @@
 # Inteligência Artificial e BIockchain na Prática 
 Materiais do IBM Talk' n' Labs - 11/10/2019
 
-<p align="center">
+<p align="left">
   <img src="./content/images/ibmcloud-talknlabs.PNG">
 </p>
 
