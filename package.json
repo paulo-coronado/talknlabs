@@ -1,21 +1,12 @@
 {
-  "name": "techsummit",
+  "name": "talknlabs",
   "version": "1.0.0",
-  "description": "[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/nielsboogaard/filepond-plugin-media-preview/blob/master/LICENSE)\r [![npm version](https://badge.fury.io/js/filepond-plugin-media-preview.svg)](https://badge.fury.io/js/filepond-plugin-media-preview)",
   "main": "index.js",
   "scripts": {
     "dev": "nodemon src/index.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/nielsboogaard/filepond-plugin-media-preview.git"
-  },
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/nielsboogaard/filepond-plugin-media-preview/issues"
-  },
-  "homepage": "https://github.com/nielsboogaard/filepond-plugin-media-preview#readme",
   "dependencies": {
     "@fortawesome/fontawesome-free": "5.9.0",
     "@tensorflow/tfjs": "^1.2.6",
@@ -24,7 +15,7 @@
     "cors": "^2.8.5",
     "datatables.net-bs4": "1.10.19",
     "express": "^4.17.1",
-    "filepond-plugin-file-metadata": "^1.0.6",
+    "fabric-network": "^1.4.4",
     "jquery": "3.4.1",
     "jquery.easing": "^1.4.1",
     "multer": "^1.4.2"
