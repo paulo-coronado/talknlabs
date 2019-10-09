@@ -6,22 +6,21 @@ Após preparmos o ambiente de treinamento (Watson Machine Learning) e os dados (
 
 Primeiramente, faça o *clone* ou baixe o .zip deste projeto.
 
-**ATENÇÃO: Certique de estar com os pré-requisitos instalados para o sucesso da aplicação.**
+**ATENÇÃO: Certique-se de estar com os pré-requisitos instalados para o sucesso da aplicação.**
 
-Utilizaremos o CLI (*command line interface*) da ferramenta Cloud Annotations para realizar a transferência de aprendizagem e o treinamento de um novo modelo customizado. Assim,  O modelo pré-treinado base utilizado neste projeto é o MobileNet e o classifcador, SSD. Esta é uma popular *stack* de modelo, denominada então, MobileNet SSD, a qual substituiremos as últimas camadas da rede classificadora para acomodar o nosso problema, a detecção de carros.
+Utilizaremos o CLI (*command line interface*) da ferramenta Cloud Annotations para realizar a transferência de aprendizagem e o treinamento de um novo modelo customizado. Assim,  O modelo pré-treinado base utilizado neste projeto é o MobileNet e o classifcador, SSD. Esta é uma popular *stack*, denominada MobileNet SSD, a qual substituiremos as últimas camadas da rede classificadora para acomodar o nosso problema, a detecção de carros.
 
 Para isso, instale Cloud Annotations Tool CLI:
 
 ` npm install -g cloud-annotations `
 
-Para iniciar o treinamento, execute o seguinte comando:
+E inicie o treinamento, executando o comando:
 
 `cacli train`
 
-Poderá ser solicitado que você coloque as credenciais dos serviços que criamos, de Machine Learning e Object Storage. Preencha de acordo com as informações que você coletou na etapa anterior. 
+Este comando exigirá as credenciais dos serviços criados (Cloud Object Storage e Watson Machine Learning). Preencha de acordo com as informações coletadas anteriormente. 
 
 ![credenciais-cli](/content/images/treinamento-1.png)
-
 
 ## Download
 
