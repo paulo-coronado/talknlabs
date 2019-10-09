@@ -18,7 +18,7 @@ Conta IBM Cloud: https://cloud.ibm.com
 
 Node.js – versão 8.10.0 ou superior: `https://nodejs.org/en/download/`
 
-Usuários Windows - Instalação pacote Build Tools: npm i windows-build-tools
+Usuários Windows - Instalação pacote Build Tools: `npm i windows-build-tools`
 
 ## Tecnologias
 
