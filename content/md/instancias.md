@@ -17,7 +17,7 @@ Após criada a instância do serviço, no menu lateral esquerdo, clique em **Cre
 
 ![machinelearning-credentials](/content/images/mlcredentials.png)
 
-Visualize as credencias geradas e anote-as separadamente.
+Depois de criado, clique no menu suspenso em **Visualizar Credenciais** e anote as informações.
 
 ![machinelearning-credentials](/content/images/mlcredview.png)
 
