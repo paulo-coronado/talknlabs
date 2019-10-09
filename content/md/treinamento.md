@@ -22,27 +22,37 @@ Este comando exigirá as credenciais dos serviços criados (Cloud Object Storage
 
 ![credenciais-cli](/content/images/treinamento-1.png)
 
-## Download
+## Download do modelo
 
-Após a conclusão do treinamento, podemos fazer o download do nosso modelo:
+Após a conclusão do treinamento, faça o download do modelo treinado:
 
 `cacli download <model_id>`
 
-Isso fará o download de um model_*diretório do nosso gráfico TensorFlow, que é o que usaremos em nossa API.
+Este comando efetuará o download do modelo para algumas aplicações (iOS, Android, Web etc.). Para o projeto, iremos utilizar o modelo localizado no diretório `model_web`.
 
+## Integração do modelo com a aplicação TensorFlow.js
 
-## Adicionar o modelo TensorFlow.js ao aplicativo
+Assim que o download for concluído, copie o `model_web` gerado e cole-o na pasta `public` deste repositório. Esta aplicação é capaz de carregar o modelo no caminho referenciado e realizar inferências em *real-time*.
 
-Assim que o download for concluído, copie o `model_web` gerado a partir do passo a passo de detecção de objetos e cole-o na `public` - pasta deste repositório.
+## Executação do aplicativo
 
-## Executar o aplicativo
+Primeiramente instale as dependências:
 
-Para instalar as dependências, execute: `npm install`
+`npm install`
 
-Para iniciar o aplicativo, execute: `npm start`
+Neste momento, será necessário instalar mais um pacote Node, o fabric-network. Porém para sua instalação, será necessário remover o seguinte arquivo localizado no `node_modules`:
 
-Abra http://localhost:3000 para visualizá-lo no navegador.
+`node_modules/@tensorflow/tfjs-converter/.git`
 
+Execute então a instalação do fabric-network:
+
+`npm i fabric-network`
+
+E finalmente, execute o aplicativo com: `npm start`.
+
+Abra a página http://127.0.0.1:3000 para visualizar as detecções e as transações ocorrendo em tempo real.
+
+Parabéns por concluir o laboratório com sucesso! Quaisquer dúvidas, sugestões ou problemas não exitem em abrir uma *issue* no repositório, ou então contactar os criadores.
 
 ***
 Links Rápidos:
