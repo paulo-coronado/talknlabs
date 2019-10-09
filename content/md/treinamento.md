@@ -1,6 +1,6 @@
 # Parte 4 - Treinamento do Modelo
 
-Após preparmos o ambiente de treinamento (Watson Machine Learning) e os dados (anotações + imagens do problema), estamos prontos para começar a treinar o modelo.
+Após prepararmos o ambiente de treinamento (Watson Machine Learning) e os dados (anotações + imagens do problema), estamos prontos para começar a treinar o modelo.
 
 ## Instalação
 
