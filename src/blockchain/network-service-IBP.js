@@ -15,40 +15,27 @@ var connectionProfile = JSON.parse(ccpJSON);
 // const yaml = require('js-yaml');
 
 
-//criando o file system wallet
+// criando o file system wallet
 // const enderecoDaCarteira = path.join('wallet');
 const carteira = new FileSystemWallet('./wallet');
-
-
-preparandoServico();
-
-
-async function preparandoServico(){
-    //BUSCANDO O CONNECTION PROFILE NO SWAGGER
-    // connectionProfile = await getConnectionProfile();
-
-    //criar identidade do usuario do peer
-    // await criarIdentidade('vsc-acme', 'MlKfcp71vLouNI3Y')
-    // await criarUsuarioCA("vitor");
-}
 
 /**
  * Função para criar o adm do peer. Use somente uma vez.
  */
-async function criarIdentidade(id, secret){
+async function criarIdentidade(id, secret) {
     return new Promise(async (resolve, reject) => {
 
-        //Se conectando com a CA da organização
+        // Se conectando com a CA da organização
         const ca = new FabricCAServices('https://nec043e-acmeca.ibp-eightbar.us-south.containers.appdomain.cloud:7054');
 
-        //Verificando a existencia de uma identidade dentro da wallet
+        // Verificando a existencia de uma identidade dentro da wallet
         const adminExiste = await carteira.exists(id);
         if (adminExiste) {
             console.log('Uma identidade já existe')
             await carteira.delete(id)
             console.log(" -- identidade antiga deletada. Gerando uma nova identidade...")
         }
-        
+
         // Inscreve usuario admin e salva na carteira
         console.log("ENROLL");
         const enrollment = await ca.enroll({ enrollmentID: id, enrollmentSecret: secret });
@@ -65,19 +52,19 @@ async function criarIdentidade(id, secret){
  * Método padrão para submeter transações
  * @param {*} usuario Proprietário da wallet
  */
-function getGatewayContract(usuario){
-    return new Promise( async (resolve, reject)=>{
-        
+function getGatewayContract(usuario) {
+    return new Promise(async (resolve, reject) => {
+
         //Abrindo conexao com a network
         const gateway = new Gateway();
-        
-        try{
+
+        try {
             // Configura connectionOptions
             console.log("Preparando opcao de conexao");
             let opcoesDeConexao = {
                 identity: usuario,
                 wallet: carteira,
-                discovery: { enabled:true, asLocalhost: false }
+                discovery: { enabled: true, asLocalhost: false }
             };
 
             // console.log(opcoesDeConexao);
@@ -89,12 +76,10 @@ function getGatewayContract(usuario){
             console.log("Success!");
             resolve(contrato)
 
-        }catch(erro){   
+        } catch (erro) {
             reject(erro)
         }
     })
-  
-
 }
 
 module.exports = {
