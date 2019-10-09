@@ -13,7 +13,11 @@ Escolha um plano de preços e clique em **Criar**.
 
 ![machinelearning-criar](/content/images/machinelearning-2.PNG)
 
-Após criada a instância do serviço, no menu lateral esquerdo, clique em **Credenciais de Serviço** e adicione uma nova credencial com as seguintes configurações:
+Criado a instância de Machine Learning, navegue até a guia **Credenciais de serviço**.
+
+![machinelearning-credentials](/content/images/machinelearning-3.PNG)
+
+Adicione uma nova credencial com as seguintes configurações:
 
 ![machinelearning-credentials](/content/images/mlcredentials.png)
 
@@ -42,18 +46,6 @@ Clique em **Criar Credencial** e preencha as informações como ilustrado na ima
 Uma vez adicionada as credenciais, clique no menu suspenso em **Visualizar Credenciais** e anote as informações.
 
 ![credentials-objectstorage](/content/images/cloudannotations-11.png)
-
-Para Machine Learning, acesse novamente seus recursos na página inicial do `IBM Cloud`. Clique em serviços e abra sua instância `Machine Learning`. Navegue até a guia Credenciais de serviço.
-
-![machinelearning-credentials](/content/images/machinelearning-3.PNG)
-
-Clique em Criar Credencial. Você pode deixar a configuração padrão e incluir.
-
-![machinelearning-credentials-criar](/content/images/machinelearning-4.PNG)
-
-Depois de adicionado, clique no menu suspenso em visualizar credenciais e anote as informações.
-
-![machinelearning-credentials-visualizar](/content/images/machinelearning-5.PNG)
 
 ***
 Links Rápidos:
