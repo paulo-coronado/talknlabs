@@ -1,16 +1,16 @@
 # Parte 4 - Treinamento do Modelo
 
-Depois de coletarmos e rotularmos nossas imagens, estamos prontos para começar a treinar nosso modelo.
+Após preparmos o ambiente de treinamento (Watson Machine Learning) e os dados (anotações + imagens do problema), estamos prontos para começar a treinar o modelo.
 
 ## Instalação
 
-Faça o Clone ou baixe o ZIP desse projeto para iniciarmos o treinamento.
+Primeiramente, faça o *clone* ou baixe o .zip deste projeto.
 
-Você precisará ter o Node 10.13.0 ou posterior instalado em sua máquina.
-Para verificar se você já possui, insira o comando `node -v` em seu terminal.
-Se não possuir, faça o download no link: https://nodejs.org/en/
+**ATENÇÃO: Certique de estar com os pré-requisitos instalados para o sucesso da aplicação.**
 
-Assim que obtido o Node, podemos instalar a CLI do Cloud Annotation:
+Utilizaremos o CLI (*command line interface*) da ferramenta Cloud Annotations para realizar a transferência de aprendizagem e o treinamento de um novo modelo customizado. Assim,  O modelo pré-treinado base utilizado neste projeto é o MobileNet e o classifcador, SSD. Esta é uma popular *stack* de modelo, denominada então, MobileNet SSD, a qual substituiremos as últimas camadas da rede classificadora para acomodar o nosso problema, a detecção de carros.
+
+Para isso, instale Cloud Annotations Tool CLI:
 
 ` npm install -g cloud-annotations `
 
