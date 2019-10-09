@@ -1,6 +1,6 @@
 # Parte 2 - Cloud Annotations Tool
 
-Para treinar um modelo de detecção de objetos, será necessário realizar a coleta de dados (*frames* de automóveis e suas anotações) e aplicar algoritmos de I.A. (como *Transfer Learning* e Redes Neurais).
+Para treinar o modelo de detecção de objetos, será necessário realizar a coleta de dados (*frames* de automóveis e suas anotações) e aplicar algoritmos de I.A. (como *Transfer Learning* e Redes Neurais).
 
 Para armazenar as dados relatados acima, crie uma instância do **IBM Cloud Object Storage** (serviço da camada gratuíta para armazenamento de dados).
 
