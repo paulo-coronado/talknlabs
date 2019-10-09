@@ -1,6 +1,6 @@
 # Parte 2 - Cloud Annotations Tool
 
-Cloud Annotations Tool é uma ferramenta open source colaborativa de anotação para treinamento de modelos de detecção de objetos em Visão Computacional.
+Cloud Annotations Tool é uma ferramenta *open source* colaborativa de anotação para treinamento de modelos de detecção de objetos em Visão Computacional.
 
 Assim, para o problema proposto será necessário realizar a coleta de dados (*frames* de automóveis e suas anotações) e aplicar algoritmos de I.A. (como *Transfer Learning* e Redes Neurais) para o treinamento do modelo.
 
