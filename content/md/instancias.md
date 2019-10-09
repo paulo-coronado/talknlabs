@@ -33,7 +33,9 @@ Então, navegue até a guia **Credenciais de Serviço**.
 
 Clique em **Criar Credencial** e preencha as informações como ilustrado na imagem abaixo e clique em **Incluir**.
 
-![credentials-objectstorage](/content/images/cloudannotations-10.PNG)
+**OBS.: Não esqueça de incluir a credencial HMAC!**
+
+![credentials-objectstorage](/content/images/cacredentials.png)
 
 Uma vez adicionada as credenciais, clique no menu suspenso em **Visualizar Credenciais** e anote as informações.
 
@@ -53,4 +55,4 @@ Depois de adicionado, clique no menu suspenso em visualizar credenciais e anote 
 
 ***
 Links Rápidos:
-[Índice](https://github.com/plcpinho/talknlabs/) - [Parte 1](/content/intro.md) - [Parte 2](/content/md/cloudannotations.md) - **[Parte 3](/content/md/instancias.md)** - [Parte 4](/content/md/treinamento.md) - [Parte 5](/content/md/rede-ibp.md)
+[Índice](https://github.com/plcpinho/talknlabs/) - [Parte 1](/content/md/intro.md) - [Parte 2](/content/md/cloudannotations.md) - **[Parte 3](/content/md/instancias.md)** - [Parte 4](/content/md/treinamento.md) - [Parte 5](/content/md/rede-ibp.md)

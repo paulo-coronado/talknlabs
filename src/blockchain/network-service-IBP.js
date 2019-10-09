@@ -8,20 +8,27 @@ const fs = require('fs');
 const path = require('path');
 // const axios = require('axios');
 
-//BUSCAR CONNECTION PROFILE PARA REDE LOCAL
+// BUSCAR CONNECTION PROFILE PARA REDE LOCAL
 const ccpPath = path.resolve(__dirname, 'ibpConnection.json');
 const ccpJSON = fs.readFileSync(ccpPath, 'utf8');
 var connectionProfile = JSON.parse(ccpJSON);
 // const yaml = require('js-yaml');
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 214b30b42621a63e873999f858d83bc24cd0316b
 // criando o file system wallet
 // const enderecoDaCarteira = path.join('wallet');
 const carteira = new FileSystemWallet('./wallet');
 
 /**
  * Função para criar o adm do peer. Use somente uma vez.
+<<<<<<< HEAD
  */
+=======
+*/
+>>>>>>> 214b30b42621a63e873999f858d83bc24cd0316b
 async function criarIdentidade(id, secret) {
     return new Promise(async (resolve, reject) => {
 
@@ -80,11 +87,13 @@ function getGatewayContract(usuario) {
             reject(erro)
         }
     })
+<<<<<<< HEAD
+=======
+
+>>>>>>> 214b30b42621a63e873999f858d83bc24cd0316b
 }
 
 module.exports = {
     getGatewayContract: getGatewayContract,
     criarIdentidade: criarIdentidade
 }
-
-

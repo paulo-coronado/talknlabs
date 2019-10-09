@@ -1,6 +1,6 @@
 # Parte 2 - Cloud Annotations Tool
 
-Para treinar um modelo de detecção de objetos, será necessário realizar a coleta de dados (*frames* de automóveis e suas anotações) e aplicar algoritmos de I.A. (como *Transfer Learning* e Redes Neurais).
+Para treinar o modelo de detecção de objetos, será necessário realizar a coleta de dados (*frames* de automóveis e suas anotações) e aplicar algoritmos de I.A. (como *Transfer Learning* e Redes Neurais).
 
 Para armazenar as dados relatados acima, crie uma instância do **IBM Cloud Object Storage** (serviço da camada gratuíta para armazenamento de dados).
 
@@ -22,7 +22,7 @@ Escolha o plano de preços ***Lite***, e clique em **Criar**.
 
 ![objectstorage](/content/images/cloudannotations-3.PNG)
 
-Uma vez que com serviço instanciado, volte para https://cloud.annotations.ai e atualize a página.
+Uma vez com serviço instanciado, volte para https://cloud.annotations.ai e atualize a página.
 
 Crie um *bucket* para armazenar dados do projeto, tais como modelo, *frames* e as suas respectivas anotações.
 
@@ -48,4 +48,4 @@ Crie o rótulo do objeto (carro) e faça as demarcacões com um retângulo entor
 
 ***
 Links Rápidos:
-[Índice](https://github.com/plcpinho/talknlabs/) - [Parte 1](/content/intro.md) - **[Parte 2](/content/md/cloudannotations.md)** - [Parte 3](/content/md/instancias.md) - [Parte 4](/content/md/treinamento.md) - [Parte 5](/content/md/rede-ibp.md)
+[Índice](https://github.com/plcpinho/talknlabs/) - [Parte 1](/content/md/intro.md) - **[Parte 2](/content/md/cloudannotations.md)** - [Parte 3](/content/md/instancias.md) - [Parte 4](/content/md/treinamento.md) - [Parte 5](/content/md/rede-ibp.md)

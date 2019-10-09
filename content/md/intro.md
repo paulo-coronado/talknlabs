@@ -14,9 +14,11 @@
 
 ## Pré-Requisitos
 
-Conta IBM Cloud: https://cloud.ibm.com
+**Conta IBM Cloud**: https://cloud.ibm.com
 
-Node.js – versão 8.10.0 ou superior: https://nodejs.org/en/download/ 
+**Node.js** – versão 8.10.0 ou superior: `https://nodejs.org/en/download/`
+
+Usuários Windows - Instalação pacote Build Tools: `npm i windows-build-tools`
 
 ## Tecnologias
 
@@ -36,4 +38,4 @@ Node.js – versão 8.10.0 ou superior: https://nodejs.org/en/download/
 
 ***
 Links Rápidos:
-[Índice](https://github.com/plcpinho/talknlabs/) - **[Parte 1](/content/intro.md)** - [Parte 2](/content/md/cloudannotations.md) - [Parte 3](/content/md/instancias.md) - [Parte 4](/content/md/treinamento.md) - [Parte 5](/content/md/rede-ibp.md)
+[Índice](https://github.com/plcpinho/talknlabs/) - **[Parte 1](/content/md/intro.md)** - [Parte 2](/content/md/cloudannotations.md) - [Parte 3](/content/md/instancias.md) - [Parte 4](/content/md/treinamento.md) - [Parte 5](/content/md/rede-ibp.md)
