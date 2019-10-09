@@ -18,11 +18,7 @@ Crie uma instância de **Watson Machine Learning** e obtenha suas credenciais de
 
 
 ### [Parte 4](/content/md/treinamento.md)
-Treine seu um modelo customizado de detecção de objetos na *Cloud*.
-
-### [Parte 5](/content/md/rede-ibp.md)
-Integre uma aplicação a uma de rede *Blockchain* hospedado no IBP (**IBM Blockchain Platform**) e faça transações de forma ágil e segura.
-
+Treine seu um modelo customizado de detecção de objetos na *Cloud*, integre-o a aplicação TensorFlow.js e efetue transações à rede Blockchain do IBP de forma ágil e segura.
 
 ***
 Links Rápidos:
