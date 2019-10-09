@@ -9,4 +9,4 @@ A plataforma permite que os membros da rede comecem a desenvolver rapidamente e 
 
 ***
 Links Rápidos:
-[Índice](https://github.com/plcpinho/talknlabs/) - [Parte 1](/content/intro.md) - [Parte 2](/content/md/cloudannotations.md) - [Parte 3](/content/md/instancias.md) - [Parte 4](/content/md/treinamento.md) - **[Parte 5](/content/md/rede-ibp.md)**
+[Índice](https://github.com/plcpinho/talknlabs/) - [Parte 1](/content/md/intro.md) - [Parte 2](/content/md/cloudannotations.md) - [Parte 3](/content/md/instancias.md) - [Parte 4](/content/md/treinamento.md) - **[Parte 5](/content/md/rede-ibp.md)**
