@@ -21,7 +21,7 @@ Adicione uma nova credencial com as seguintes configurações:
 
 ![machinelearning-credentials](/content/images/mlcredentials.png)
 
-Depois de criado, clique no menu suspenso em **Visualizar Credenciais** e anote as informações.
+Depois de criado, clique no menu suspenso em **Visualizar credenciais** e anote as informações.
 
 ![machinelearning-credentials](/content/images/mlcredview.png)
 
