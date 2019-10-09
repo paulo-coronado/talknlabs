@@ -1,10 +1,12 @@
 # Parte 2 - Cloud Annotations Tool
 
-Para treinar o modelo de detecção de objetos, será necessário realizar a coleta de dados (*frames* de automóveis e suas anotações) e aplicar algoritmos de I.A. (como *Transfer Learning* e Redes Neurais).
+Cloud Annotations Tool é uma ferramenta open source colaborativa de anotação para treinamento de modelos de detecção de objetos em Visão Computacional.
 
-Para armazenar as dados relatados acima, crie uma instância do **IBM Cloud Object Storage** (serviço da camada gratuíta para armazenamento de dados).
+Assim, para o problema proposto será necessário realizar a coleta de dados (*frames* de automóveis e suas anotações) e aplicar algoritmos de I.A. (como *Transfer Learning* e Redes Neurais) para o treinamento do modelo.
 
-## Preparando os dados para treinamento
+Com a finalidade de armazenar as dados que serão utilazado no projeto (como imagens, anotações e o modelo a ser desenvolvido), crie uma instância do **IBM Cloud Object Storage** - serviço da camada gratuíta para armazenamento de dados.
+
+## Preparando ambiente de treinamento
 
 Para usar o **Cloud Annotations Tool**, navegue para https://cloud.annotations.ai e clique em **Continuar com o IBM Cloud**.
 
