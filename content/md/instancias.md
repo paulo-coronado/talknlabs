@@ -17,7 +17,11 @@ Após criada a instância do serviço, no menu lateral esquerdo, clique em **Cre
 
 ![machinelearning-credentials](/content/images/mlcredentials.png)
 
-## Criando credentiais do serviço Object Storage 
+Visualize as credencias geradas e as anote separadamente.
+
+![machinelearning-credentials](/content/images/mlcredview.png)
+
+## Criando credenciais do serviço Object Storage 
 
 Agora que possuímos a instância de Object Storage e Watson Machine Learning, com a finalidade de treinar um modelo de Inteligência Artificial será necessário utilizarmos os dados armazenados no Cloud Object Storage em conjunto com os poderosos recursos computacionais fornecidos pelo serviço Watson Machine Learning. Para isso, acesse seus recursos na página inicial do **IBM Cloud**.
 
