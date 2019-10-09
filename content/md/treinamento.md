@@ -52,7 +52,9 @@ E finalmente, execute o aplicativo com: `npm start`.
 
 Abra a página http://127.0.0.1:3000 para visualizar as detecções e as transações ocorrendo em tempo real.
 
-Parabéns por concluir o laboratório com sucesso! Quaisquer dúvidas, sugestões ou problemas não exitem em abrir uma *issue* no repositório, ou então contactar os criadores.
+**Parabéns!!! Você conclui o laboratório com sucesso!**
+
+Quaisquer dúvidas, sugestões ou problemas com o código, não exite em abrir uma *issue* ou contactar os criadores. Obrigado por participarem desta jornada!
 
 ***
 Links Rápidos:
