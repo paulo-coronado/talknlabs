@@ -21,7 +21,6 @@ const carteira = new FileSystemWallet('./wallet');
 
 /**
  * Função para criar o adm do peer. Use somente uma vez.
-<<<<<<< HEAD
  */
 async function criarIdentidade(id, secret) {
     return new Promise(async (resolve, reject) => {

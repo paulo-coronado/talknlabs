@@ -24,10 +24,10 @@ $('document').ready(() => {
     error: function () {
       // File do not exist
       Swal.fire({
-        title: 'Error',
-        html: 'Please <b>upload</b> a video to see results!',
+        title: 'Erro',
+        html: 'Faça <b>upload</b> de um vídeo para verificar resultados!',
         type: 'error',
-        footer: "<a href='../main.html'>Upload video here!</a>"
+        footer: "<a href='../main.html'>Faça upload aqui!</a>"
       })
     },
     success: function () {
@@ -216,7 +216,7 @@ const renderPredictions = (canvas, predictions, labels) => {
     if (parseInt(y + height / 2) > 314 && parseInt(y + height / 2) < 326) {
       counter++
       earnings += Number($('#fare').val())
-      $('#earnings').html('US$ ' + (earnings).toFixed(2).toString())
+      $('#earnings').html('R  $ ' + (earnings).toFixed(2).toString())
       $("#counter").html(counter.toString())
       $('#progressbar').attr('aria-valuenow', (counter / time).toFixed(2)).css('width', ((counter / time).toFixed(2) * 100).toString() + '%')
       $('#traffic-rate').html((counter / time).toFixed(2))
