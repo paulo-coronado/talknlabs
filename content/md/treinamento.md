@@ -12,11 +12,15 @@ Utilizaremos o CLI (*command line interface*) da ferramenta Cloud Annotations pa
 
 Para isso, instale Cloud Annotations Tool CLI:
 
-` npm install -g cloud-annotations `
+```
+npm install -g cloud-annotations
+```
 
 E inicie o treinamento, executando o comando:
 
-`cacli train`
+```
+cacli train
+```
 
 Este comando exigirá as credenciais dos serviços criados (Cloud Object Storage e Watson Machine Learning). Preencha de acordo com as informações coletadas anteriormente. 
 
@@ -26,7 +30,9 @@ Este comando exigirá as credenciais dos serviços criados (Cloud Object Storage
 
 Após a conclusão do treinamento, faça o download do modelo treinado:
 
-`cacli download <model_id>`
+```
+cacli download <model_id>
+```
 
 Este comando efetuará o download do modelo para algumas aplicações (iOS, Android, Web etc.). Para o projeto, iremos utilizar o modelo localizado no diretório `model_web`.
 
@@ -38,7 +44,9 @@ Assim que o download for concluído, copie o `model_web` gerado e cole-o na past
 
 Primeiramente instale as dependências:
 
-`npm install`
+```
+npm install
+```
 
 Neste momento, será necessário instalar mais um pacote Node, o fabric-network. Porém para sua instalação, será necessário remover o seguinte arquivo localizado no `node_modules`:
 
@@ -46,9 +54,15 @@ Neste momento, será necessário instalar mais um pacote Node, o fabric-network.
 
 Execute então a instalação do fabric-network:
 
-`npm i fabric-network`
+```
+npm i fabric-network
+```
 
-E finalmente, execute o aplicativo com: `npm start`.
+E finalmente, execute o aplicativo com:
+
+```
+npm start
+```
 
 Abra a página http://127.0.0.1:3000 para visualizar as detecções e as transações ocorrendo em tempo real.
 
