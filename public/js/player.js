@@ -213,7 +213,7 @@ const renderPredictions = (canvas, predictions, labels) => {
     const label = labels[parseInt(prediction.class)]
 
     // This code runs if a car is detected
-    if (parseInt(y + height / 2) > 314 && parseInt(y + height / 2) < 326) {
+    if (parseInt(y + height / 2) > 315 && parseInt(y + height / 2) < 325) {
       counter++
       earnings += Number($('#fare').val())
       $('#earnings').html('R  $ ' + (earnings).toFixed(2).toString())
