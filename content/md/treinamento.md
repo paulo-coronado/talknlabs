@@ -48,16 +48,6 @@ Primeiramente instale as dependências:
 npm install
 ```
 
-Neste momento, será necessário instalar mais um pacote Node, o fabric-network. Porém para sua instalação, será necessário remover o seguinte arquivo localizado no `node_modules`:
-
-`node_modules/@tensorflow/tfjs-converter/.git`
-
-Execute então a instalação do fabric-network:
-
-```
-npm i fabric-network
-```
-
 E finalmente, execute o aplicativo com:
 
 ```
