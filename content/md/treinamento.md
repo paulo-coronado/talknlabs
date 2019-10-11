@@ -1,12 +1,12 @@
 # Parte 4 - Treinamento do Modelo
 
-Após prepararmos o ambiente de treinamento (Watson Machine Learning) e os dados (anotações + imagens do problema), estamos prontos para treinar o modelo de detecção.
+Após prepararmos o ambiente de treinamento (Watson Machine Learning) e os dados (anotações + imagens do problema), estamos prontos para treinar o modelo de detecção. Ou então, utilize o modelo já treinado [aqui](http://ibm.biz/ia-blockchain)!
+
+**ATENÇÃO: Certique-se de estar com os pré-requisitos instalados para o sucesso da aplicação.**
 
 ## Instalação
 
 Primeiramente, faça o *clone* ou baixe o .zip deste projeto.
-
-**ATENÇÃO: Certique-se de estar com os pré-requisitos instalados para o sucesso da aplicação.**
 
 Utilizaremos o CLI (*command line interface*) da ferramenta Cloud Annotations para realizar a transferência de aprendizagem e o treinamento de um novo modelo customizado. Assim,  O modelo pré-treinado base utilizado neste projeto é o MobileNet e o classifcador, SSD. Esta é uma popular *stack*, denominada MobileNet SSD, a qual substituiremos as últimas camadas da rede classificadora para acomodar o nosso problema, a detecção de carros.
 
