@@ -20,7 +20,9 @@
 
 Usuários Windows - Instalação pacote Build Tools:
 
-`npm install --global windows-build-tools`
+```
+npm install --global windows-build-tools
+```
 
 ## Tecnologias
 
