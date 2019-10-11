@@ -1,6 +1,6 @@
 # Parte 4 - Treinamento do Modelo
 
-Após prepararmos o ambiente de treinamento (Watson Machine Learning) e os dados (anotações + imagens do problema), estamos prontos para treinar o modelo de detecção. Ou então, utilize o modelo já treinado [aqui](http://ibm.biz/ia-blockchain)!
+Após prepararmos o ambiente de treinamento (Watson Machine Learning) e os dados (anotações + imagens do problema), estamos prontos para treinar o modelo de detecção. Ou então, utilize o modelo já treinado [aqui](https://ibm.biz/ia-blockchain)!
 
 **ATENÇÃO: Certique-se de estar com os pré-requisitos instalados para o sucesso da aplicação.**
 
